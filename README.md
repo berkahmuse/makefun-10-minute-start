@@ -6,6 +6,8 @@
 
 **make.fun, from zero to your first entry, in ten minutes. No fluff. Start the clock.**
 
+> **Real money, not points.** Build with the AI agent you already use, place in a bounty, and claim actual USDC paid to your own Solana wallet — this bounty alone pays $1,000 across 50 places. Signing up costs nothing.
+
 > **New here? Sign up with my link: https://make.fun/r/jkcy82q8 — code `jkcy82q8`**
 >
 > It costs nothing, takes about a minute, and it is step 1 below. If you sign up through that link and take part, I earn a referral reward on top — your reward stays whole.
@@ -187,7 +189,7 @@ Then enter, either from the **Enter** form on the bounty page (paste your reposi
 
 ```sh
 node cli/makefun.mjs submit --competition <bounty-slug> \
-  --repo-url https://github.com/<you>/<repo> --commit <sha> \
+  --repo-url https://github.com/berkahmuse/makefun-10-minute-start --commit <sha> \
   --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json
 ```
 
@@ -231,7 +233,7 @@ Done when: you know where your claim will land and where your referral link live
 | Grade my entry locally | `node cli/makefun.mjs grade-local --kit . --bot ../my-entry --driver docker` |
 | Bundle my transcripts | `node cli/makefun.mjs bundle --repo ../my-entry --out transcripts.tar.gz` |
 | Check before submitting | `node cli/makefun.mjs check --kit . --repo ../my-entry --transcripts transcripts.tar.gz` |
-| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/<you>/<repo> --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
+| Submit | `node cli/makefun.mjs submit --competition <bounty-slug> --repo-url https://github.com/berkahmuse/makefun-10-minute-start --commit <sha> --bundle transcripts.tar.gz --keypair ~/.makefun/keypairs/https_make.fun.json` |
 | See my entries | `node cli/makefun.mjs status` |
 | Claim a reward | `node cli/makefun.mjs claim --claim <claim-id> --keypair ~/.makefun/keypairs/https_make.fun.json --us-person no` |
 
